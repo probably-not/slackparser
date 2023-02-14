@@ -1,3 +1,3 @@
-module github.com/probably-not/go-module-small
+module github.com/probably-not/slackparser
 
-go 1.17
+go 1.19
