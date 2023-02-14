@@ -9,9 +9,9 @@ import (
 
 func TestParse(t *testing.T) {
 	testCases := []struct {
+		expected *ParsedMessage
 		desc     string
 		mrkdwn   string
-		expected *ParsedMessage
 	}{
 		{
 			desc:   "normal text",

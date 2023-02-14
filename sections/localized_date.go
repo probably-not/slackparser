@@ -5,10 +5,10 @@ import "time"
 var _ Section = (*LocalizedDate)(nil)
 
 type LocalizedDate struct {
-	unix         int64
 	format       string
 	optionalLink string
 	fallback     string
+	unix         int64
 }
 
 func NewLocalizedDate(unix int64, format, optionalLink, fallback string) *LocalizedDate {
