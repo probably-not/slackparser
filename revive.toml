@@ -1,0 +1,98 @@
+ignoreGeneratedHeader = false
+severity = "warning"
+confidence = 0.8
+errorCode = 2
+warningCode = 2
+
+## Recommended Defaults ##
+
+## The Recommended Defaults are the best practices recommended by the revive documentation. ##
+## They offer good coverage of many idiomatic and recommended Go practices. ##
+
+[rule.blank-imports]
+[rule.context-as-argument]
+# The context-keys-type rule enforces the practice of not using primitive/basic types as context keys.
+# [rule.context-keys-type]
+[rule.dot-imports]
+[rule.error-return]
+[rule.error-strings]
+[rule.error-naming]
+# The exported rule requires commenting exported values. Since this is a private repo, we don't need to worry about this.
+# [rule.exported]
+[rule.if-return]
+[rule.increment-decrement]
+# The var-naming rule enforces proper naming conventions for variables and packages. Since we don't always use the proper uppercases or no underscores, we remove this linter.
+# [rule.var-naming]
+[rule.var-declaration]
+[rule.package-comments]
+[rule.range]
+[rule.receiver-naming]
+[rule.time-naming]
+[rule.unexported-return]
+[rule.indent-error-flow]
+[rule.errorf]
+[rule.empty-block]
+[rule.superfluous-else]
+[rule.unused-parameter]
+[rule.unreachable-code]
+[rule.redefines-builtin-id]
+
+## Extras ##
+
+## Extras are opt-in, we uncomment the ones we want to use. ##
+
+# The time-equal rule is not available in the current version of the revive GitHub Action, so we are disabling it for now.
+# [rule.time-equal]
+[rule.argument-limit]
+  arguments = [15]
+# [rule.cyclomatic]
+#   arguments = [5]
+# [rule.max-public-structs]
+#   arguments = [10]
+# [rule.file-header]
+# [rule.confusing-naming]
+# [rule.get-return]
+[rule.modifies-parameter]
+# [rule.confusing-results]
+[rule.deep-exit]
+# [rule.add-constant]
+#   arguments = [{maxLitCount = "3",allowStrs ="\"\"",allowInts="0,1,2",allowFloats="0.0,0.,1.0,1.,2.0,2."}]
+# [rule.flag-parameter]
+[rule.unnecessary-stmt]
+[rule.struct-tag]
+[rule.modifies-value-receiver]
+[rule.constant-logical-expr]
+[rule.bool-literal-in-expr]
+[rule.function-result-limit]
+  arguments = [4]
+# [rule.imports-blacklist]
+#   arguments = []
+[rule.range-val-in-closure]
+[rule.range-val-address]
+[rule.waitgroup-by-value]
+[rule.atomic]
+[rule.empty-lines]
+# [rule.line-length-limit]
+[rule.call-to-gc]
+[rule.duplicated-imports]
+[rule.import-shadowing]
+# [rule.bare-return]
+# [rule.unused-receiver]
+# # Comment out the unhandled-error rule since we have this already
+# [rule.unhandled-error]
+# [rule.cognitive-complexity]
+#   arguments = [10]
+[rule.string-of-int]
+# [rule.string-format]
+[rule.early-return]
+[rule.unconditional-recursion]
+[rule.identical-branches]
+[rule.defer]
+[rule.unexported-naming]
+# [rule.function-length]
+#   arguments =[10,0]
+# [rule.nested-structs]
+[rule.useless-break]
+# [rule.banned-characters]
+# The optimize-operands-order rule is not available in the current version of the revive GitHub Action, so we are disabling it for now.
+# [rule.optimize-operands-order]
